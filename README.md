@@ -1,16 +1,62 @@
-# React + Vite
+# PS8: Mocktail Menu
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Name
+**Mocktail Cafe**
 
-Currently, two official plugins are available:
+## Problem Statement
+Build a cafe drinks menu with a recipe page for each non-alcoholic drink.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## API Used
+[TheCocktailDB API](https://www.thecocktaildb.com/api.php)
 
-## React Compiler
+- **Drinks List:** `https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic`
+- **Drink Details:** `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=:id`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Routes
 
-## Expanding the ESLint configuration
+| Route | Description |
+|---|---|
+| `/` | Home page with a See Menu button |
+| `/drinks` | Displays non-alcoholic drinks and search by name |
+| `/drinks/:id` | Shows drink image, glass type, category, ingredients, measurements and instructions |
+| `*` | Page not found |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+- React.js
+- React Router DOM
+- JavaScript
+- CSS
+- TheCocktailDB API
+
+## Screenshots
+
+### 1. Home Page
+<img width="1470" height="956" alt="Screenshot 2026-10-15 at 12 25 07 AM" src="https://github.com/user-attachments/assets/5085a135-1c6d-49a8-ad50-bcbaf6592eef" />
+
+
+### 2. Drinks Menu
+<img width="1470" height="956" alt="Screenshot 2026-10-15 at 12 35 52 AM" src="https://github.com/user-attachments/assets/92d11c74-f970-4b66-8412-ac7bd01e1cab" />
+
+
+## Live Link
+
+[Open Mocktail Cafe](ps-8-mocktail-menu.vercel.app)
+
+## How to Run Locally
+
+1. Clone the repository.
+2. Open the project folder in the terminal.
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the project:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the local URL shown in the terminal.
